@@ -9,16 +9,16 @@ true + false = 1
 "$" + 4 + 5 = "$45"
 "4" - 2 = 2
 "4px" - 2 = NaN
-7 / 0 = Infinity
+7 / 0 = Sonsuz
 " -9  " + 5 = " -9  5" // (3)
 " -9  " - 5 = -14 // (4)
 null + 1 = 1 // (5)
 undefined + 1 = NaN // (6)
 ```
 
-1. The addition with a string `"" + 1` converts `1` to a string: `"" + 1 = "1"`, and then we have `"1" + 0`, the same rule is applied.
-2. The subtraction `-` (like most math operations) only works with numbers, it converts an empty string `""` to `0`.
-3. The addition with a string appends the number `5` to the string.
-4. The subtraction always converts to numbers, so it makes `"  -9  "` a number `-9` (ignoring spaces around it).
-5. `null` becomes `0` after the numeric conversion.
-6. `undefined` becomes `NaN` after the numeric conversion.
+1. String ile toplamada (`"" + 1`) , `1` sayısı string olarak dönüştürülür: `"" + 1 = "1"`, ve sonrasında `"1" + 0` için de aynı kural uygulanır.
+2. Sting ile çıkarmada `-` (çoğu matematik işleminde olduğu gibi) sadece sayılarla çalışılır, boş bir string'i (`""`) , `0` olarak dönüştürür.
+3. String ile toplama `5` sayısını da string'e çevirir.
+4. Çıkarma işlemi her zaman sayıya dönüştürür, yani `"  -9  "` string'ini `-9` olarak dönüştürür (etrafındaki boşlukları görmezden gelir).
+5. `null` , sayısal dönüşümden sonra `0` değerini alır.
+6. `undefined` , sayısal dönüşümden sonra `NaN` değerini alır.
